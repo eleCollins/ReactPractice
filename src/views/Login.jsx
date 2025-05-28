@@ -13,7 +13,7 @@ const Login = ({ login }) => {
             return;
         }
         alert(username + " " + password);
-        const isLogin = await login({username, pass: password}); //si no usas await te regresa una promise
+        const isLogin = await login({username, pass: password}); 
         if(isLogin === true) {
             navigate("/home");
         }
